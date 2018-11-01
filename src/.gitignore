@@ -1,5 +1,0 @@
-#ignore all Python files
-*.pyc
-
-#ignore database
-db.sqlite3

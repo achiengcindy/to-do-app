@@ -16,6 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from todo import views
+
 urlpatterns = [
+	path('', views.index, name= 'index'),
     path('admin/', admin.site.urls),
+    path('create/', views.create_task, name= 'create'),
+    path('delete/<int:task_id>/', views.delete_task, name= 'delete'),
 ]
+
+
